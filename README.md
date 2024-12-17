@@ -1,6 +1,6 @@
-#RAG-Powered Question Answering Pipeline
+RAG-Powered Question Answering Pipeline
 
-#Overview
+Overview
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline to process multiple-choice questions using:
 	1.	Document Retrieval: FAISS (Facebook AI Similarity Search) for fast document similarity matching.
@@ -9,9 +9,9 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline to proce
 
 The pipeline processes questions from an input CSV file in batches, handles errors like GPU memory exhaustion, and appends results to an output CSV file.
 
-#Project Workflow
+Project Workflow
 
-#Steps:
+Steps:
 
 	1.	Prepare Documents:
 	    •	Combine predefined documents with additional question-answer sentences from an Excel file.
@@ -33,7 +33,7 @@ The pipeline processes questions from an input CSV file in batches, handles erro
 	6.	Save Results:
 	    •	Append answers (in letter format, e.g., A, B, C) to an output CSV file.
 
-#Technologies Used
+Technologies Used
 
 	•	Python (Data Processing)
 	•	Google Colab (Execution Environment)
@@ -43,13 +43,13 @@ The pipeline processes questions from an input CSV file in batches, handles erro
 	•	PyTorch (Model Execution)
 	•	Pandas (CSV Handling)
 
-#Error Handling
+Error Handling
 
 	•	CUDA Out-of-Memory:
 	•	The pipeline retries processing a batch after clearing GPU memory.
 	•	After reaching the maximum retries, the batch is skipped.
 
-#Improvements
+Improvements
 
 	•	Implemented GPU memory management with retries on failure.
 	•	Supports batch processing for scalability.
